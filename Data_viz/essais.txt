@@ -1,0 +1,31 @@
+df['Bancs']=pd.Categorical(df['Bancs'])
+df['camera']=pd.Categorical(df['camera'])
+df['zone']=pd.Categorical(df['zone'])
+df['Pop']=pd.Categorical(df['Pop'])
+df1 = df[df["Pop"] == '830']
+df2 = df[df["Pop"] == '803']
+df3 = df[df["Pop"] == '812']
+df4 = df[df["Pop"] == 'Témoin']
+df5 = df[df["Pop"] == '802']
+df6 = df[df["Pop"] == '815']
+df.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df1.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df2.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df3.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df4.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df5.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df6.groupby('Bancs')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df1.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df2.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df3.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df4.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df5.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df6.groupby('camera')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df1.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df2.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df3.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df4.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df5.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
+df6.groupby('zone')['15_j','16_j','17_j','18_j','19_j','20_j','21_j'].mean().plot(kind='bar')
